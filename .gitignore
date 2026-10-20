@@ -9,6 +9,9 @@ CLAUDE.md
 [0-9][0-9]_*.md
 *.docx
 
+# הערות אישיות
+what we learned.md
+
 # OS / editor
 .DS_Store
 Thumbs.db
