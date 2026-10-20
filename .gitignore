@@ -1,0 +1,17 @@
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Build output
+.dist/
+
+# מסמכי אפיון ותכנון (לא חלק מהאתר)
+[0-9][0-9]_*.md
+*.docx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

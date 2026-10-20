@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>שולי דים וולפמן | אדריכלית ומעצבת פנים</title>
+<meta name="description" content="שולי דים וולפמן, אדריכלית ומעצבת פנים. תכנון, שיפוצים וליווי עיצוב פנים לבתים פרטיים ודירות.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="logo" id="logo"></a>
+  <nav>
+    <button class="burger" id="burger" aria-label="תפריט"><i></i><i></i></button>
+    <ul id="menu">
+      <li><a href="#about">אודות</a></li>
+      <li><a href="#projects">פרויקטים</a></li>
+      <li><a href="#services">שירותים</a></li>
+      <li><a href="#process">תהליך</a></li>
+      <li><a href="#contact" class="pill">דברו איתי</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-slides" id="heroSlides"></div>
+    <div class="hero-shade"></div>
+    <div class="hero-text">
+      <p class="eyebrow" id="heroTitle"></p>
+      <h1 id="heroTagline"></h1>
+      <p class="lead" id="heroIntro"></p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn solid">לצפייה בפרויקטים</a>
+        <a href="#contact" class="btn ghost">לקביעת פגישה</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="גלילה"><span></span></a>
+    <div class="hero-dots" id="heroDots"></div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stats"></section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-img reveal" id="aboutImg"></div>
+    <div class="about-text reveal">
+      <p class="eyebrow">אודות</p>
+      <h2 id="aboutName"></h2>
+      <div id="aboutBody"></div>
+      <a href="#contact" class="link-arrow">בואו נכיר ←</a>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-head reveal">
+      <p class="eyebrow">עבודות נבחרות</p>
+      <h2>פרויקטים</h2>
+    </div>
+    <div class="filters reveal" id="filters"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- BEFORE / AFTER -->
+  <section class="ba" id="ba">
+    <div class="section-head reveal">
+      <p class="eyebrow">הטרנספורמציה</p>
+      <h2>לפני ואחרי</h2>
+      <p class="muted">גררו את הקו כדי לראות את ההבדל</p>
+    </div>
+    <div id="baBox"></div>
+    <p class="muted center" id="baCaption"></p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-head reveal">
+      <p class="eyebrow">במה אני מסייעת</p>
+      <h2>שירותים</h2>
+    </div>
+    <div class="acc" id="acc"></div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="section-head reveal">
+      <p class="eyebrow">איך זה עובד</p>
+      <h2>מסע משותף, שלב אחרי שלב</h2>
+    </div>
+    <div class="steps" id="steps"></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="quotes" id="quotes">
+    <div class="q-wrap" id="qWrap"></div>
+    <div class="q-dots" id="qDots"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="reveal">
+        <p class="eyebrow">צרו קשר</p>
+        <h2>נתחיל מהבית שלכם</h2>
+        <p class="lead2">ספרו לי בקצרה על הפרויקט ואחזור אליכם בהקדם, בדרך כלל תוך יום עבודה.</p>
+        <ul class="contact-list" id="contactList"></ul>
+      </div>
+      <form class="form reveal" id="form">
+        <label>שם מלא<input name="name" required></label>
+        <label>טלפון<input name="phone" type="tel" required></label>
+        <label>מה סוג הפרויקט?
+          <select name="type">
+            <option>שיפוץ</option><option>תכנון בית / תוספת בנייה</option>
+            <option>עיצוב פנים</option><option>פגישת ייעוץ</option><option>אחר</option>
+          </select>
+        </label>
+        <label>ספרו לי עוד<textarea name="msg" rows="4"></textarea></label>
+        <button class="btn solid" type="submit">שליחה בוואטסאפ</button>
+        <small class="muted">ההודעה תיפתח בוואטסאפ מוכנה לשליחה.</small>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <span id="footName"></span>
+  <span>© <span id="year"></span> כל הזכויות שמורות</span>
+</footer>
+
+<a class="wa" id="waFloat" target="_blank" rel="noopener" aria-label="וואטסאפ">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.2 15.3l-.3-.2-3 .8.8-2.9-.2-.3A8.200 8.200 0 0 1 12 3.800zM8.800 7.500c-.2 0-.5.100-.7.400-.3.300-1 1-1 2.400s1 2.800 1.200 3c.1.200 2 3.100 4.900 4.300 2.400 1 2.900.8 3.400.7.500-.1 1.700-.7 1.900-1.400.2-.7.200-1.200.2-1.400-.1-.1-.3-.2-.6-.3l-1.800-.9c-.2-.1-.4-.1-.6.100l-.8 1c-.2.200-.3.200-.6.100-1.300-.5-2.500-1.500-3.300-2.900-.1-.3.100-.3.600-1.200.1-.2 0-.3 0-.4l-.8-2c-.2-.5-.5-.5-.7-.5z"/></svg>
+</a>
+
+<!-- LIGHTBOX / PROJECT MODAL -->
+<div class="modal" id="modal" aria-hidden="true">
+  <button class="m-close" id="mClose" aria-label="סגירה">✕</button>
+  <button class="m-nav m-prev" id="mPrev" aria-label="הבא">›</button>
+  <button class="m-nav m-next" id="mNext" aria-label="הקודם">‹</button>
+  <div class="m-body" id="mBody"></div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
