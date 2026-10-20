@@ -23,6 +23,6 @@ jobs:
       # מעתיק את תיקיית web לשרת. --delete מוחק בשרת קבצים שנמחקו מהריפו
       - name: Upload site
         run: |
-          rsync -avz --delete \
+          rsync -rlvz --delete --no-perms --no-owner --no-group --omit-dir-times \
             web/ \
             "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/"
